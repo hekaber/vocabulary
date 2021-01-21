@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "etable",
+    "translations": {
+      "DE": "der Stall",
+      "FR": "l'étable"
+    }
+  },
+  {
+    "id": "2",
+    "name": "dissolve",
+    "translations": {
+      "DE": "auflösen",
+      "FR": "dissoudre",
+      "JP": "かいけつする"
+    }
+  },
+  {
+    "id": "3",
+    "name": "violate",
+    "translations": {
+      "DE": "verstossen",
+      "FR": "enfreindre",
+      "JP": "しんがい"
+    }
+  },
+  {
+    "id": "4",
+    "name": "rent",
+    "translations": {
+      "DE": "angemietet",
+      "FR": "loué",
+      "JP": "かり"
+    }
+  },
+  {
+    "id": "5",
+    "name": "deploy",
+    "translations": {
+      "DE": "der Aufgebot",
+      "FR": "le déploiement",
+      "JP": "てんかい"
+    }
+  },
+  {
+    "id": "6",
+    "name": "rapplik",
+    "translations": {
+      "DE": "anrücken",
+      "FR": "rappliquer",
+      "JP": "くる"
+    }
+  },
+  {
+    "id": "7",
+    "name": "reclam",
+    "translations": {
+      "DE": "auffordern",
+      "FR": "exiger",
+      "JP": "もとめる"
+    }
+  },
+  {
+    "id": "8",
+    "name": "front",
+    "translations": {
+      "DE": "vor",
+      "FR": "devant",
+      "JP": "まえに"
+    }
+  },
+  {
+    "id": "9",
+    "name": "solike",
+    "translations": {
+      "DE": "sowie",
+      "FR": "ainsi que",
+      "JP": "おやび"
+    }
+  }
+]
