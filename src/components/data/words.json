@@ -1,0 +1,37 @@
+[
+  {
+    "id": "1",
+    "name": "etable",
+    "translations": {
+      "DE": "der Stall",
+      "FR": "l'étable"
+    }
+  },
+  {
+    "id": "2",
+    "name": "dissolve",
+    "translations": {
+      "DE": "auflösen",
+      "FR": "dissoudre",
+      "JP": "かいけつする"
+    }
+  },
+  {
+    "id": "3",
+    "name": "violate",
+    "translations": {
+      "DE": "verstossen",
+      "FR": "enfreindre",
+      "JP": "しんがい"
+    }
+  },
+  {
+    "id": "4",
+    "name": "rent",
+    "translations": {
+      "DE": "angemietet",
+      "FR": "loué",
+      "JP": "かり"
+    }
+  }
+]
