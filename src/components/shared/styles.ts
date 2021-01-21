@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const FillerContainer = styled.div`
+    width: 100%;
+    height: 100%;
+`;
+
 export const ActionButton = styled.a`
     position: absolute;
     top: 3px;
@@ -27,6 +32,9 @@ export const LargeButtonContainer = styled.a`
     color: white;
     font-size: 2em;
     background-color: lightgreen;
+    &:hover {
+        background-color: rgba(9,30,66,.08);
+    }
 `;
 
 export const ListContainer = styled.div`
@@ -48,6 +56,20 @@ export const ListItemContainer = styled.div`
     border: solid 0.1rem #000000;
     margin: 0.5rem 0;
     font-size: 2em;
+`;
+
+interface FormContainerProps {
+    isHidden?: boolean;
+}
+
+export const FormContainer = styled.div<FormContainerProps>`
+    position: fixed;
+    transform: translateY(${props => (props.isHidden ? "0" : "-100vh")});
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    transition: transform .5s;
+    z-index: 100;
 `;
 
 export const Header = styled.div`

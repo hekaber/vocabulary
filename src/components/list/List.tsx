@@ -11,6 +11,7 @@ export const List = () => {
             {words.map((word) => {
                 const title = word.translations.FR ? word.translations.FR : "not available";
                 return <ListItem
+                    key={word.id}
                     title={title}
                 />
             })}
