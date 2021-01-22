@@ -1,4 +1,5 @@
-type Language = 'FR' | "DE" | "EN" | "JP";
+export const ALLOWED_LANGUAGES = ["FR", "DE", "EN", "JP"];
+export type Language = typeof ALLOWED_LANGUAGES[number];
 
 interface Word {
     id: string;

@@ -9,10 +9,6 @@ function App() {
 
     const [showForm, setShowForm] = useState(false);
 
-    const handleFormHide = () => {
-        setShowForm(false);
-    }
-
     return (
         <div className="App">
             <FillerContainer>
@@ -28,7 +24,7 @@ function App() {
             </FillerContainer>
             <WordForm
                 show={showForm}
-                onHide={handleFormHide}
+                onHide={() => setShowForm(!showForm)}
             />
         </div>
     );

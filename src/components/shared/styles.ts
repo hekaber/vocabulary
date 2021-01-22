@@ -46,15 +46,17 @@ export const ListContainer = styled.div`
     &::-webkit-scrollbar { 
         display: none;
     }
-}
 `;
 
-export const ListItemContainer = styled.div`
-    height: 100px;
+const LineContainer = styled.div`
     text-align: left;
     padding: 0.1rem;
-    border: solid 0.1rem #000000;
     margin: 0.5rem 0;
+`;
+
+export const ListItemContainer = styled(LineContainer)`
+    height: 100px;
+    border: solid 0.1rem #000000;
     font-size: 2em;
 `;
 
@@ -70,6 +72,11 @@ export const FormContainer = styled.div<FormContainerProps>`
     background-color: #FFFFFF;
     transition: transform .5s;
     z-index: 100;
+`;
+
+export const FormLine = styled(LineContainer)`
+    width: 100%;
+    height: 50px;  
 `;
 
 export const Header = styled.div`
