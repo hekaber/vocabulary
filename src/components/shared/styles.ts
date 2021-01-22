@@ -74,9 +74,22 @@ export const FormContainer = styled.div<FormContainerProps>`
     z-index: 100;
 `;
 
+export const Form = styled.form`
+    & > h1 {
+        margin: 1em 0;
+    }
+`;
+
 export const FormLine = styled(LineContainer)`
     width: 100%;
-    height: 50px;  
+    height: 50px;
+    & > span {
+        width: 15%;
+        display: inline-block;
+    }
+    & > input {
+        width: 70%;
+    }
 `;
 
 export const Header = styled.div`

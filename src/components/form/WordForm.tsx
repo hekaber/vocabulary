@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {LargeButtonContainer, FormContainer, FormLine, ActionButton} from "../shared/styles";
+import {LargeButtonContainer, FormContainer, FormLine, Form, ActionButton} from "../shared/styles";
 import {IoCloseSharp} from "react-icons/io5";
 import {ALLOWED_LANGUAGES} from "../../common/AppContext";
 
@@ -44,29 +44,24 @@ export const WordForm = ({show, onHide}: WordFormProps) => {
             >
                 <IoCloseSharp />
             </ActionButton>
-            <form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit}>
+                <h1>Nouveau mot</h1>
                 <FormLine>
-                    <label>
-                        Title:
-                        <input type="text" name="name" value="" onChange={handleInputChange}/>
-                    </label>
+                    <span><label htmlFor="title">Title:</label></span>
+                    <input type="text" id="title" name="name" value="" onChange={handleInputChange}/>
                 </FormLine>
 
                 {translations.map((translation, index) => {
                     return (
                         <FormLine key={index}>
-                            <label>
-                                Contenu:
-                                <input type="text" name={translation.name.toString()} value="" onChange={handleInputChange}/>
-                            </label>
-                            <label>
-                                Langue:
-                                <select>
-                                    {ALLOWED_LANGUAGES.map((language, index) => {
-                                        return (<option key={index} value={language}>{language}</option>)
-                                    })}
-                                </select>
-                            </label>
+                            <span><label htmlFor={"translat_" + index}>Contenu:</label></span>
+                            <input type="text" id={"translat_" + index} name={translation.name.toString()} value="" onChange={handleInputChange}/>
+                            <span><label htmlFor={"lang_" + index}>Langue:</label></span>
+                            <select id={"lang_" + index}>
+                                {ALLOWED_LANGUAGES.map((language, index) => {
+                                    return (<option key={index} value={language}>{language}</option>)
+                                })}
+                            </select>
                         </FormLine>
                     )
                 })}
@@ -75,7 +70,8 @@ export const WordForm = ({show, onHide}: WordFormProps) => {
                 >
                     + Ajouter traduction
                 </LargeButtonContainer>
-            </form>
+
+            </Form>
         </FormContainer>
     );
 }

@@ -8,7 +8,7 @@ export const ListItem = (props: ListItemProps) => {
 
     return(
         <ListItemContainer>
-            <h1>{props.title}</h1>
+            <h4>{props.title}</h4>
             <div>Test</div>
         </ListItemContainer>
     );

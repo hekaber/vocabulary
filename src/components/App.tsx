@@ -12,7 +12,7 @@ function App() {
     return (
         <div className="App">
             <FillerContainer>
-                <Header>Memo Vocabulaire</Header>
+                <Header><h1>Memo Vocabulaire</h1></Header>
                 <MenuButton/>
                 <List/>
                 <LargeButtonContainer
